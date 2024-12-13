@@ -1,0 +1,4 @@
+.env
+node_modules/
+pss.txt
+#  **/file name         will remove from everyfolder
