@@ -110,7 +110,7 @@ app.listen(8080,()=>{
 
 app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
-app.use("/",userRouter);
+app.use("/",listingsRouter);
 
 
 //error route
