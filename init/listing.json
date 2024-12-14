@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Cozy Mountain Cabin",
+    "description": "A peaceful retreat nestled in the mountains.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Mountain+Cabin",
+      "filename": "mountain-cabin-1"
+    },
+    "price": 1200,
+    "location": "Aspen, Colorado",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a1",
+      "username": "mountainExplorer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-106.8175, 39.1911]
+    }
+  },
+  {
+    "title": "Beachfront Paradise",
+    "description": "A stunning home right by the beach.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Beachfront+Paradise",
+      "filename": "beachfront-paradise-1"
+    },
+    "price": 1500,
+    "location": "Malibu, California",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a2",
+      "username": "beachLover"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.8065, 34.0259]
+    }
+  },
+  {
+    "title": "Modern City Loft",
+    "description": "A stylish loft in the heart of the city.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Modern+City+Loft",
+      "filename": "city-loft-1"
+    },
+    "price": 1800,
+    "location": "New York, New York",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a3",
+      "username": "cityDweller"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-74.006, 40.7128]
+    }
+  },
+  {
+    "title": "Rustic Countryside House",
+    "description": "Experience the charm of countryside living.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Rustic+Countryside+House",
+      "filename": "countryside-house-1"
+    },
+    "price": 900,
+    "location": "Lancaster, England",
+    "country": "UK",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a4",
+      "username": "countryFan"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-2.798, 54.048]
+    }
+  },
+  {
+    "title": "Tropical Island Villa",
+    "description": "A luxurious villa on a private island.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Tropical+Island+Villa",
+      "filename": "tropical-villa-1"
+    },
+    "price": 5000,
+    "location": "Bora Bora",
+    "country": "French Polynesia",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a5",
+      "username": "islandLuxury"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-151.7415, -16.5004]
+    }
+  },
+  {
+    "title": "Ski Resort Chalet",
+    "description": "Perfect for a winter getaway with skiing opportunities.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Ski+Resort+Chalet",
+      "filename": "ski-chalet-1"
+    },
+    "price": 2500,
+    "location": "Zermatt, Switzerland",
+    "country": "Switzerland",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a6",
+      "username": "skiLover"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [7.7491, 46.0207]
+    }
+  },
+  {
+    "title": "Desert Oasis Retreat",
+    "description": "Relax and unwind in the middle of the desert.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Desert+Oasis+Retreat",
+      "filename": "desert-oasis-1"
+    },
+    "price": 1100,
+    "location": "Palm Springs, California",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a7",
+      "username": "desertDreamer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-116.5453, 33.8303]
+    }
+  },
+  {
+    "title": "Historic Castle Stay",
+    "description": "Live like royalty in a historic castle.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Historic+Castle+Stay",
+      "filename": "historic-castle-1"
+    },
+    "price": 4000,
+    "location": "Edinburgh, Scotland",
+    "country": "UK",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a8",
+      "username": "royalFan"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-3.1883, 55.9533]
+    }
+  },
+  {
+    "title": "Jungle Treehouse",
+    "description": "A unique stay high up in the jungle canopy.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Jungle+Treehouse",
+      "filename": "jungle-treehouse-1"
+    },
+    "price": 1300,
+    "location": "Costa Rica",
+    "country": "Costa Rica",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00a9",
+      "username": "jungleAdventurer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-84.0833, 9.9333]
+    }
+  },
+  {
+    "title": "Urban Apartment",
+    "description": "A convenient apartment in the heart of downtown.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Urban+Apartment",
+      "filename": "urban-apartment-1"
+    },
+    "price": 1000,
+    "location": "Chicago, Illinois",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00aa",
+      "username": "urbanExplorer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-87.6298, 41.8781]
+    }
+  },
+  {
+    "title": "Lakefront Cabin",
+    "description": "A serene cabin by the lake.",
+    "image": {
+      "url": "https://via.placeholder.com/600x400.png?text=Lakefront+Cabin",
+      "filename": "lakefront-cabin-1"
+    },
+    "price": 1400,
+    "location": "Lake Tahoe, California",
+    "country": "USA",
+    "reviews": [],
+    "owner": {
+      "_id": "64a7d8f1e4b0bcd59b9e00ab",
+      "username": "lakeLover"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-120.0188, 39.0968]
+    }
+  }
+]
