@@ -20,9 +20,9 @@ if(process.env.NODE_ENV != "production"){
 
 
 
+const userRouter = require("./routes/user.js");
 const listingsRouter = require("./routes/listing.js");
 const reviewsRouter = require("./routes/review.js");
-const userRouter = require("./routes/user.js");
 
 
 app.set("view engine", "ejs");
@@ -108,9 +108,9 @@ app.listen(8080,()=>{
 // .timeout = 120000;
 
 
+app.use("/",userRouter);
 app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
-app.use("/",listingsRouter);
 
 
 //error route
