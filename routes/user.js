@@ -6,7 +6,12 @@ const passport = require("passport");
 const { ref } = require("joi");
 const { saveRedirectUrl } = require("../middleware.js");
 const userController  = require("../controllers/users.js");
+const listingController = require("../controllers/listings.js");
 
+
+router.route("/").get(wrapAysnc(listingController.index)).post(isLoggedIn,
+    upload.single("Listing[image]"),validateListings,
+    wrapAysnc(listingController.createListing));
 
 router.route("/signup").get(userController.renderSignupForm)
 .post(wrapAsync(userController.signup));
