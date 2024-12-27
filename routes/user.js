@@ -8,7 +8,7 @@ const userController  = require("../controllers/users.js");
 const listingController = require("../controllers/listings.js");
 const {isLoggedIn, isOwner,validateListings} = require("../middleware.js");
 const wrapAysnc = require("../utils/wrapAysnc.js")
-
+const {upload} = require("../cloudConfig.js");
 
 
 router.route("/").get(wrapAysnc(listingController.index)).post(isLoggedIn,
