@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const Review = require('./review');
+const Review = require('./reviews'); // Ensure the correct file name is used
 
 const listingSchema = new Schema({
     title: {
