@@ -1,156 +1,179 @@
-
 /* Navbar */
-.navbar{
+.navbar {
     height: 5rem;
     background-color: white;
 }
 
-.fa-paper-plane{
+.fa-paper-plane {
     color: #fe424d;
     font-size: 2rem;
 }
-.nav-link{
+
+.nav-link {
     color: #222222 !important;
 }
 
 /* footer */
-.f-info-links a{
+.f-info-links a {
     text-decoration: none;
     color: #222222;
 }
-.f-info-links a:hover{
+
+.f-info-links a:hover {
     text-decoration: underline;
 }
-.f-info{
+
+.f-info {
     align-items: space-evenly;
     justify-content: center;
     flex-wrap: wrap;
-    background-color:#ebebeb;
+    background-color: #ebebeb;
     height: 8rem;
     display: flex;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-.f-info-links,.f-info-socials,.f-info-brand{
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
- 
-.f-info-socials i{
+
+.f-info-socials i {
     margin-right: 2rem;
     font-size: 1.2rem;
-
 }
-.listing-card{
+
+.listing-card {
     border: none !important;
     margin-bottom: 2rem;
-
 }
+
 .card-img-top {
     border-radius: 1rem !important;
     width: 100% !important;
     object-fit: cover !important;
-    
 }
+
 .card-body {
     padding: 0 !important;
 }
-.card-text p{
+
+.card-text p {
     font-weight: 400 !important;
 }
-.listing-link{
-text-decoration: none;
+
+.listing-link {
+    text-decoration: none;
 }
-.card-img-overlay{
+
+.card-img-overlay {
     opacity: 0;
 }
-.card-img-overlay:hover{
+
+.card-img-overlay:hover {
     opacity: 0.2;
     background-color: white;
 }
+
 /* new page */
-.add-btn{
+.add-btn {
     background-color: #fe424d !important;
     border: none !important;
 }
 
 /* edit page */
-.edit-btn{
+.edit-btn {
     background-color: #fe424d !important;
     border: none !important;
 }
 
 /* show page */
-.show-img{
+.show-img {
     height: 30vh;
 }
-.btns{
+
+.btns {
     display: flex;
 }
-.show-card{
+
+.show-card {
     padding-right: 0;
-    padding-left: 0 ;
+    padding-left: 0;
 }
 
-#map { height: 400px;
-width: 80vh; }
+#map {
+    height: 400px;
+    width: 80vh;
+}
 
-
-.search-btn{
+.search-btn {
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
     padding: 0 1rem 0 1rem;
-  }
-.search-btn:hover{
+}
+
+.search-btn:hover {
     background-color: #fe424d;
     color: #fff;
-  }
-.search-btn i{
+}
+
+.search-btn i {
     margin-right: 0.5rem;
     display: inline;
-  }
-.search-inp{
+}
+
+.search-inp {
     font-size: 1rem;
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
-  }
+}
 
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-  #filters{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-  }
-  .filter{
-      text-align: center;
-      margin-right: 2rem;
-      margin-top: 2rem;
-      opacity: 0.7;
-  }
-  .filter:hover{
-      opacity: 1;
-      cursor: pointer;
-  }
-  .filter p {
-      font-size: 0.8rem   ;
-  }
-  .tax-info{
-      display: none;
-  }
-  .tax-toggle{
-      border: 1px solid black;
-      border-radius: 1rem;
-      height: 2.5rem;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      margin-left: 2remrem;
-  } */
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.4; /* Lighter by default */
+    transition: opacity 0.3s;
+}
 
-  /* General reset for small screens */
+.filter:hover,
+.filter.active {
+    opacity: 1; /* Darker when hovered or active */
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+/* General reset for small screens */
 body {
     margin: 0;
     padding: 0;
@@ -237,13 +260,4 @@ body {
     .card-img-top {
         height: 18rem; /* Adjust image height */
     }
-}
-.filter {
-    transition: opacity 0.3s;
-}
-.filter:hover {
-    opacity: 0.6;
-}
-.filter.active {
-    opacity: 0.6;
 }
