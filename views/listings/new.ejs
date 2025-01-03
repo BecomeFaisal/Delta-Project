@@ -38,7 +38,25 @@
                         <label for="Location" class="form-label">Location</label>
                         <input type="text" name="Listing[location]" placeholder="Enter Location" class="form-control" required>
                     </div>
-
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select name="Listing[category]" class="form-control" required>
+                            <option value="">Select Category</option>
+                            <option value="Rooms">Rooms</option>
+                            <option value="Iconic Cities">Iconic Cities</option>
+                            <option value="Mountains">Mountains</option>
+                            <option value="Castle">Castle</option>
+                            <option value="Pools">Pools</option>
+                            <option value="Camp">Camp</option>
+                            <option value="Hangouts">Hangouts</option>
+                            <option value="Farms">Farms</option>
+                            <option value="Country Side">Country Side</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Landscapes">Landscapes</option>
+                            <option value="Landmark">Landmark</option>
+                        </select>
+                        <div class="invalid-feedback">Please select a category.</div>
+                    </div>
                     <button class="btn btn-dark add-btn mt-3">Add</button>
                     <br><br>
                 </form>
