@@ -1,12 +1,3 @@
-/* body{
-    display: flex;
-    flex-direction: column;
-    min-width: 100vh;
-    font-family: 'Plus Jakarta Sans',sans-serif !important;
-}
-.container{
-    flex: 1;
-}
 
 /* Navbar */
 .navbar{
@@ -246,4 +237,13 @@ body {
     .card-img-top {
         height: 18rem; /* Adjust image height */
     }
+}
+.filter {
+    transition: opacity 0.3s;
+}
+.filter:hover {
+    opacity: 0.6;
+}
+.filter.active {
+    opacity: 0.6;
 }
