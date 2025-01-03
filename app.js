@@ -59,10 +59,7 @@ const sessionOptions={
   },
 }
 
-//home route
-// app.get("/",(req,res)=>{
-  //   res.send("HI, i amd ROot");
-  // });
+
   
   app.use(session(sessionOptions));
   app.use(flash());
@@ -81,17 +78,7 @@ app.use((req,res,next)=>{
   next();
 })
 
-//fake user
-  // app.get("/demouser",async(req,res)=>{
-  //   let fakeUser = new User({
-  //     email: "abc@gmail..com",
-  //     username: "faijaul"
-  //   })
-  //   let rUser  = await User.register(fakeUser,"pass1234");
-  //   res.send(rUser);
-  // })
 
-//to start db
 app.use(methodOverride("_method"));
     main().then(()=>{
         console.log("connected to db");

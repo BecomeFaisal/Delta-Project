@@ -76,7 +76,7 @@
 
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
     <% for(let listing of alllistings){ %>
-        <a href="/listings/<%= listing._id%>" class="listing-link <%= listing.category %>">
+        <a href="/listings/<%= listing._id%>" class="listing-link <%= listing.category.replace(/\s+/g, '-') %>">
             <div class="card col listing-card">
                 <img src="<%= listing.image.url %>" class="card-img-top" alt="Listing_image" style="height:20rem"/>
                 <div class="card-img-overlay"></div>
@@ -93,20 +93,19 @@
     <% } %>
 </div>
 
-    <script>
-        let taxSwitch = document.getElementById("flexSwitchCheckDefault");
-        taxSwitch.addEventListener("click",()=>{
-           let taxinfo= document.getElementsByClassName("tax-info");
-           for(info of taxinfo){
-            if(info.style.display != "inline"){
-                info.style.display= "inline";
+<script>
+    let taxSwitch = document.getElementById("flexSwitchCheckDefault");
+    taxSwitch.addEventListener("click", () => {
+        let taxinfo = document.getElementsByClassName("tax-info");
+        for (let info of taxinfo) {
+            if (info.style.display != "inline") {
+                info.style.display = "inline";
+            } else {
+                info.style.display = "none";
             }
-            else{
-                info.style.display= "none";
-            }
-           }
-        })
-    </script>
+        }
+    });
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -115,7 +114,7 @@
 
         filters.forEach(filter => {
             filter.addEventListener('click', () => {
-                const filterType = filter.getAttribute('data-filter');
+                const filterType = filter.getAttribute('data-filter').replace(/\s+/g, '-');
                 listings.forEach(listing => {
                     if (listing.classList.contains(filterType) || filterType === 'all') {
                         listing.style.display = 'block';
