@@ -1,47 +1,149 @@
-/* Reset navbar to not be sticky */
+/* Navbar */
 .navbar {
+    height: 5rem;
     background-color: white;
-    position: relative;
-    z-index: 1;
 }
 
-/* Ensure the body or a wrapper element uses flexbox */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+.fa-paper-plane {
+    color: #fe424d;
+    font-size: 2rem;
 }
 
-/* Main content should take up all available space */
-.main-content {
-    flex: 1;
+.nav-link {
+    color: #222222 !important;
 }
 
-/* Footer styling */
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
 .f-info {
+    align-items: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #ebebeb;
     height: 8rem;
     display: flex;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    position: relative;
-    bottom: 0;
 }
 
-/* Filter icons */
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* new page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* edit page */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#map {
+    height: 400px;
+    width: 80vh;
+}
+
+.search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+}
+
+.search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+}
+
+.search-btn i {
+    margin-right: 0.5rem;
+    display: inline;
+}
+
+.search-inp {
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
 #filters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
 
 .filter {
-    margin: 1rem;
     text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
     opacity: 0.4; /* Lighter by default */
     transition: opacity 0.3s;
 }
@@ -51,15 +153,109 @@ body {
     opacity: 1; /* Darker when hovered or active */
 }
 
-.row {
-    row-gap: 2rem;
+.filter p {
+    font-size: 0.8rem;
 }
 
-.listing-card {
-    margin: 1rem auto;
-    width: 95%; /* Adjust card width */
+.tax-info {
+    display: none;
 }
 
-.card-img-top {
-    height: 18rem; /* Adjust image height */
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+/* General reset for small screens */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar {
+        height: auto; /* Allow navbar to adjust height */
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navbar .search-inp {
+        width: 100%; /* Full width input */
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar .search-btn {
+        width: 100%; /* Full width button */
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #filters .filter {
+        margin: 0.5rem auto;
+        text-align: center;
+    }
+
+    #filters .tax-toggle {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .listing-card {
+        margin: 1rem auto;
+        width: 90%; /* Adjust card width */
+    }
+
+    .card-img-top {
+        height: 15rem; /* Adjust image height */
+    }
+}
+
+/* Medium devices (tablets, less than 768px) */
+@media (max-width: 767.98px) {
+    .navbar .search-inp {
+        width: 70%; /* Adjust input size */
+    }
+
+    .navbar .search-btn {
+        width: auto; /* Keep button inline */
+    }
+
+    #filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .row {
+        row-gap: 2rem;
+    }
+
+    .listing-card {
+        margin: 1rem auto;
+        width: 95%; /* Adjust card width */
+    }
+
+    .card-img-top {
+        height: 18rem; /* Adjust image height */
+    }
 }
