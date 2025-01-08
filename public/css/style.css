@@ -1,3 +1,10 @@
+/* Reset navbar to not be sticky */
+.navbar {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
 /* Ensure the body or a wrapper element uses flexbox */
 body {
     display: flex;
@@ -20,25 +27,18 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
-.f-info-links,
-.f-info-socials,
-.f-info-brand {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.f-info-socials i {
-    margin-right: 2rem;
-    font-size: 1.2rem;
-}
-
 /* Filter icons */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .filter {
     margin: 1rem;
     text-align: center;
