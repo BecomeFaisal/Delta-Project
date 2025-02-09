@@ -8,6 +8,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const mongoose  = require("mongoose");
+const favicon = require("serve-favicon");
 
 
 
@@ -30,6 +31,7 @@ app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended:true}));
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 
 const dbUrl = process.env.ATLASDB_URL;
